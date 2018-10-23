@@ -1,6 +1,6 @@
 # My Promotional Site
 
-This repository contains code for a website promoting a **Emily Ding's Webpage (Personal Porfirio)**.
+This repository contains code for a website promoting a **Emily Ding's Webpage (Personal Portfolio)**.
 
 There're three `HTML` pages: 
 1. `index.html`: main page, including my profile, pictures, projects, contact and stories.
