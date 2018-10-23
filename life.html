@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Emily Ding">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Emily Ding | Life Photo Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Kaushan+Script|Righteous" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation Part-->
+    <nav id="home" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" hre="#">
+                <figure>
+                    <img class="logo" src="img/emily-icon.png" alt="a icon with My name, Emily Ding">
+                </figure>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarresponsive" aria-controls="navbarSupportedContent"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarresponsive" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" aria-label="Homepage link">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#profile" aria-label="Link to profile section">Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#projects" aria-label="Link to projects section">Projects</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="life.html" aria-label="Link to Life Gallery page">Life</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#contact" aria-label="Link to contact section">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery -->
+    <div style="text-align:center">
+        <h1 class="gallery">My Life Moments</h1>
+        <h3>There are lots of sweet moments in my life.</h3>
+        <h3>Click an image and the big picture with detail will be shown off as bottom:</h3>
+    </div>
+
+    <!-- The three columns -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4 life">
+                <img src="img/gallery/couple.JPG" alt="Emily and Isaac play kayak at rattlesnake lake | June, 2018" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="col-md-4 life">
+                <img src="img/gallery/event.JPG" alt="A summer camp event in Japan with Church family | August, 2016" style="width:100%"
+                    onclick="myFunction(this);">
+            </div>
+            <div class="col-md-4 life">
+                <img src="img/gallery/uniqulo.JPG" alt="Uniqulo co-worker reunion in Bellevue | January, 2016" style="width:100%" onclick="myFunction(this);">
+            </div>
+
+        </div>
+        <div class="row padding">
+            <div class="col-md-4 life">
+                <img src="img/gallery/japan.JPG" alt="A snapshot in Japan | August, 2016" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="col-md-4 life">
+                <img src="img/gallery/jp-field.JPG" alt="Students are playing baseball in Japan | August, 2016" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="col-md-4 life">
+                <img src="img/gallery/lake.JPG" alt="A snapshot in washington lake | July, 2017" style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+        <div class="row padding">
+            <div class="col-md-4 life">
+                <img src="img/gallery/nanjing.JPG" alt="A snapshot at Nanjing, China | August, 2013" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="col-md-4 life">
+                <img src="img/gallery/wuxi.JPG" alt="A snapshot at Wuxi, China | August, 2016" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="col-md-4 life">
+                <img src="img/gallery/shadow.JPG" alt="A snapshot in unknown lake in Washington State | April, 2015" style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <div class="out-container">
+            <span onclick="this.parentElement.style.display='none'" class="close-btn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+        </div>
+
+        <footer>
+            <div class="container-fluid padding">
+                <div class="row text-center padding">
+                    <div class="col-md-6">
+                        <h4>My School Address:</h4>
+                        <hr class="light">
+                        <p>Seattle, WA 98195</p>
+                        <p>
+                            <a href="https://www.google.com/maps/dir/''/uw+seattle+address/data=!4m5!4m4!1m0!1m2!1m1!1s0x549014929d8535eb:0x6b742c7901b82ba3?sa=X&amp;ved=0ahUKEwifgoSXiunbAhWkCTQIHcsHBtgQ9RcIrAEwDA"
+                                role="button" class="btn btn-outline-secondary btn-lg" aria-label="a direction button to University of Washington">Google Map Direction</a>
+                        </p>
+                        <p>
+                            <a class="tel" href="tel:206-897-4636" aria-label="in State telephone of University of Washington" title="Click to call the number">206-897-INFO (4636)</a> (Seattle)</p>
+                        <p>
+                            <a class="tel" href="tel:866-897-4636" aria-label="out of State telephone of University of Washington" title="Click to call the number">866-897-INFO (4636)</a> (outside Seattle)</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>My Home Address:</h4>
+                        <hr class="light">
+                        <p>Bellevue, WA 98008</p>
+                        <p>Call me via:
+                            <a class="tel" href="tel:+14252098649" aria-label="my cell phone number" title="Click to call the number">+1 (425) 209-8649</a>
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <hr class="light">
+                        <h5>All the writing, figures, images belong to &copy; 2018 Emily Ding</h5>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- support the slides part & animation & icon-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+        <script src="js/life.js"></script>
+</body>
+
+</html>

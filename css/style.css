@@ -1,0 +1,437 @@
+/* Font & Size */
+h1, .col-12 > h2, h1.display-4 {    
+    font-family: 'Cabin Sketch', cursive;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px lightgrey;
+    padding: .8rem;
+}
+
+h3 {
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 1.5px 1.5px black;
+    color: lightgrey;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+}
+
+/* remove the underline for links */
+a:hover {
+    text-decoration: none;
+}
+
+/* Navigation */
+.navbar {
+    padding: .8rem;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-family: 'Righteous', cursive;
+    font-size: 1.1em !important;
+}
+
+.nav-link:hover {
+    text-shadow: 2px 2px 10px grey;
+}
+
+.logo {
+    width: 35%;
+}
+
+/* Slides */
+.carousel-inner img {
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px black;
+    padding-top: 0;
+}
+
+.carousel-caption h2 {
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 200%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px black;
+    padding-bottom: 1rem;
+}
+
+/* profile image with shadow */
+.profile-img {
+    border-radius: 50%;
+    border: 2px solid rgb(189, 186, 186);
+    padding: 2.5px;
+    width: 200px;
+    -webkit-filter: drop-shadow(8px 8px 10px rgb(199, 198, 198));
+    filter: drop-shadow(8px 8px 10px grey)
+}
+
+/* coding part image */
+a > img.img-fluid {
+    border: 1px solid rgb(104, 103, 103);
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 1em;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+a > img.img-fluid:hover {
+    box-shadow: 0 0 2px 1px goldenrod;
+}
+
+.jumbotron {
+    border-radius: 0;
+    background-color: white;
+}
+
+.padding {
+    padding: .8rem;
+}
+
+/* Background Image */
+.parallax-1 {
+    /* The image used */
+    background-image: url("../img/uk-2.JPG");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+    /* The image used */
+    background-image: url("../img/background.JPG");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Gif part */
+.col-sm-6.col-md-3 {
+    position: relative;
+    width: 50%;
+}
+
+.currentProject {
+    width: 100%;
+    margin-bottom: 2rem;
+    color: lightgrey;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    font-size: 20px;
+}
+  
+.gif {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+  
+.col-sm-6.col-md-3:hover .overlay {
+    opacity: .9;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+  
+.text {
+    color: whitesmoke;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 2.5px 2.5px black;
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Project */
+.col-md-6.col-lg-3 {
+    padding: 1rem;
+}
+
+/* Connect */
+.social a {
+    font-size: 5em;
+    padding: 3rem;
+}
+
+.fab.fa-weibo {
+    color: orange;
+}
+
+.fab.fa-github {
+    color: darkgray;
+}
+
+.fab.fa-facebook {
+    color: #3b5998;
+}
+
+.fab.fa-instagram {
+    color: #517fa4;
+}
+
+.fab.fa-weibo:hover,
+.fab.fa-github:hover,
+.fab.fa-facebook:hover,
+.fab.fa-instagram:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(235, 232, 232, 0.425);
+    color: darkolivegreen;
+    text-shadow: darkcyan;
+    padding-top: 3rem;
+    font-family: 'Righteous', cursive;
+}
+
+.col-md-6.address {
+    margin-bottom: 3rem;
+}
+
+hr.light {
+    border-top: 1px solid black;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+.tel {
+    color: darkblue;
+    text-shadow: #222;
+}
+
+/* ------------- Life ----------------*/
+.gallery {
+    margin-top: 2rem;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.col-lg-8 a {
+    color: #222;
+}
+
+.col-lg-8 a:hover {
+    color: blue;
+}
+
+/* The grid: three equal columns that floats next to each other */
+.col-md-4.life {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.col-md-4.life img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.col-md-4.life img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row.padding:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.out-container {
+    position: relative;
+    display: none;
+    padding: 1rem;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    color: lightgray;
+    text-shadow: 1.5px 1.5px black;
+    font-size: 200%;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+/* Closable button inside the expanded image */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .socal a {
+        font-size: 4em;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .carousel-caption {
+        top: 50%;
+    }
+
+    .carousel-caption h1 {
+        font-family: 'Righteous', cursive;
+        color: white;
+        font-size: 350%;
+    }
+    
+    .carousel-caption h2 {
+        font-family: 'Righteous', cursive;
+        color: white;
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: .25rem;
+    }
+
+    .display-4 {
+        font-size: 200%;
+    }
+
+    .social a {
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+
+    #imgtext {
+        bottom: 20px;
+        font-size: 200%;
+        left: 35px;
+        right:35px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 40%;
+    }
+
+    .carousel-caption h1 {
+        font-family: 'Righteous', cursive;
+        color: white;
+        font-size: 200%;
+    }
+    
+    .carousel-caption h2 {
+        font-family: 'Righteous', cursive;
+        color: white;
+        font-size: 110%;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .display-4 {
+        font-size: 160%;
+    }
+
+    .social a {
+        font-size: 2em;
+        padding: .7rem;
+    }
+
+    #imgtext {
+        bottom: 5px;
+        text-align: center;
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 798px) {
+    /* Animation for navigation bar */
+    .nav-link {
+        text-shadow: 1px 1px 15px wheat;
+        text-align: center;
+        width: 100px;
+        padding: 20px 0;
+        line-height: 0;
+        margin: 20px auto;
+        background: whitesmoke;
+        border-radius: 30px;
+        filter: drop-shadow(2px 2px 5px rgb(51, 2, 2));
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .nav-link:hover {
+        background: lightgray;
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 411px) {
+    .navbar-nav.ml-auto{
+        text-align: right;
+    }
+}
+
+/* --------------- coding camp ------------------ */
+figure.coding {
+    border: 1px solid rgb(104, 103, 103);
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 1em;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.cite {
+    text-align: right;
+}
